@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import './ab.scss';
 
 import Abc from '../text.jsx';
-
+import Func from './func.jsx';
 class App extends Component {
   render() {
     return (
@@ -16,9 +15,5 @@ class App extends Component {
       </div>
     );
   }
-}
-
-function Func(){
-  return <h1>函数组件</h1>;
 }
 export default App;

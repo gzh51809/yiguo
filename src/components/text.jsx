@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './text.scss'
+import './text.css'
 class text extends Component {
   render() {
     return (
