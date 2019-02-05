@@ -4,7 +4,7 @@ class text extends Component {
   render() {
     return (
       <div className="tou">
-        头部
+        <div>头部</div>
       </div>
     );
   }

@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 
+
 import Abc from '../text.jsx';
-import Func from './func.jsx';
+import Navbar from './Navbar.jsx';
+import {SaSwitch} from './router.js';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <div>
         <Abc />
-        <Func />
-      </div>
-        
+        <div className="main">
+          <SaSwitch></SaSwitch>
+        </div>
+        <Navbar></Navbar>
       </div>
     );
   }
