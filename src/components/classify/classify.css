@@ -1,0 +1,6 @@
+.classify{
+    display: flex;
+}
+.classify > div:nth-child(1) {
+    width: 83px;
+}

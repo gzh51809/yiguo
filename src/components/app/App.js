@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
+import "antd/dist/antd.css";
 import './App.css';
 
-
-import Abc from '../text.jsx';
 import Navbar from './Navbar.jsx';
 import {SaSwitch} from './router.js';
 class App extends Component {
@@ -18,7 +17,6 @@ class App extends Component {
   render() {
     return (
       <div className="App" onClick={this.handleClick.bind(this,1,2)}>
-        <Abc />
         <div className={this.state.data}>
           <SaSwitch></SaSwitch>
         </div>

@@ -1,11 +1,10 @@
-
 .navDian{
-    color: aquamarine;
+    /* color: aquamarine; */
 }
 .sNav{
     height: 51px;
     background: yellow;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
 }
