@@ -1,6 +1,61 @@
 .classify{
+
+}
+.classTop{
+    height: 40px;
+    width: 375px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.classTop input{
+    display: block;
+    width: 307px;
+    height: 27px;
+    border-radius: 20px;
+    background: #f4f4f4;
+    border: 0;
+    position: relative;
+    top: 5px;
+    left: 15px;
+    font-size: 12px;
+    padding-left: 29px;
+    outline:none;
+}
+.classTop span{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #11B57C;
+}
+.classTop p{
+    display: block;
+    position: absolute;
+    left: 24px;
+    top: 10px;
+}
+.classBox{
+    display: flex;    
+}
+.classLefti{
+    color: #11B57C;
+}
+.classRight{
+    flex: 1;
+    
+}
+.classItem{
+    float: left;
+    margin-left: 5px;
     display: flex;
-}
-.classify > div:nth-child(1) {
+    flex-direction: column;
     width: 83px;
+    height: 96px;
+    align-items: center;
+    justify-content: center;
 }
+.classItem img{
+    width: 57px;
+    height: 57px;
+}
+

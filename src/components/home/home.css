@@ -1,6 +1,7 @@
 .MyCarousel{
     height: 217px;
     background: palevioletred;
+    margin-top: 37px;
 }
 .img1{
     height: 115px;
@@ -10,7 +11,8 @@
 /* 首页分类 */
 .homeClass{
     height: 163px;
-    background: aqua;
+    background-image: url('http://img10.yiguoimg.com/d/items/2019/190202/9288737204741698_1125x480.jpg?w=1125&h=480)');
+    margin-bottom: 10px;
 }
 .homeClass .one{
     float: left;
@@ -18,7 +20,7 @@
     padding: 0 0 14px;
     text-align: center;
     color: #333;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .homeClass img{
     width: 48px;
@@ -106,4 +108,17 @@
     padding: 0;
     width: 100%;
     height: .8vw;
+}
+/* 人气排行 */
+.rq{
+    height: 136px;
+    width: 375px;
+    background: url(../../assets/rq.jpg) no-repeat;
+    background-size: 100%;
+}
+
+/* 转圈圈 */
+.bot{
+    text-align: center;
+    display: block;
 }

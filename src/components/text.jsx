@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import {Icon} from 'antd';
 import './text.css'
 class text extends Component {
   render() {
     return (
       <div className="tou">
-        <div>头部</div>
+        <p className="dlName">广州</p>
+        <p className="jiantou"></p>
+        <p className="tuoSeach"><Icon type="search" /></p>
       </div>
     );
   }

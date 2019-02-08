@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import Abc from '../text.jsx';
 import './home.css';
 import Hscroll from './Hscroll.jsx';
-import { Carousel } from 'antd';
+import ItemList from './ItemList.js';
+import { Carousel,Spin  } from 'antd';
 
 class Home extends Component {
     constructor(){
@@ -24,7 +25,7 @@ class Home extends Component {
                 <Carousel autoplay>
                 {
                     this.state.CarouselData.map(function(item){
-                        return <div key={item}><img src={rimg(item)} /></div>
+                        return <div key={item}><img src={rimg(item)} alt=""/></div>
                     })
                 }
                     
@@ -51,12 +52,15 @@ class Home extends Component {
                 <div><p>春节不打烊配送公告</p></div>
             </Carousel>
             </div>
-            <div className="img2">小组大图</div>
+            
             <Hscroll class="sing" img={this.state.img1} img2={this.state.img2}></Hscroll>
-            <p style={{height:"100px"}}>首页</p>  
+            <div className="rq"></div>
+            <ItemList sum={this.state.chunData}/>
+            <div className="bot" style={{height:"100px"}}><Spin /></div>  
         </div>
     )};
 }
+
 export default Home;
 
 function rimg(url){

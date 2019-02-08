@@ -2,4 +2,34 @@
     height: 37px;
     width: 100%;
     background: linear-gradient(90deg,#36db84,#0eb27b);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: fixed;
+    top:0;
+    z-index: 8;
+}
+.dlName{
+    font-size: 12px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.jiantou{
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(135deg);
+}
+.tuoSeach{
+    height: 25px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 5px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 13px;
+    color: #ffffff;
+    padding-left: 10px;
 }

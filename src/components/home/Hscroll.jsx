@@ -3,7 +3,7 @@ import './H_scroll.css';
 import {Icon} from 'antd';
 
 function Hscroll(porps){
-    let acg=[1,2,3,4,5];
+    let acg=[1,2,3,4,5,6];
     return (<div className={porps.class}>
     <img src={porps.img} alt=""/>
         <div className="product-list">
@@ -12,9 +12,9 @@ function Hscroll(porps){
         return (<div className="proitemF" key={params}>
         <img src={porps.img2} alt=""/>
         <div className="proitem">
-            <span>自利红樱桃</span>
+            <span>自利红樱桃跳跳跳</span>
             <div>
-                <span>秒杀39.9元</span>
+                <span className="label">秒杀39.9元</span>
             </div>
             <div>
                 <strong>￥39.9</strong>/454g
