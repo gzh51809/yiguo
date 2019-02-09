@@ -122,3 +122,8 @@
     text-align: center;
     display: block;
 }
+/* 列表页的 */
+.listPageTop{
+    height: 37px;
+    background: #11B57C;
+}

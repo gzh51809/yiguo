@@ -3,7 +3,7 @@ import {Menu,Icon} from 'antd';
 import "antd/dist/antd.css";
 import './classify.css';
 import classLIst from './itemdata.json';
-console.log(classLIst.CategoryList);
+//console.log(classLIst.CategoryList);
 
 class Classify extends Component {
     constructor(){
@@ -14,6 +14,8 @@ class Classify extends Component {
             xitem:classLIst.CategoryList[0].Childs
         }
     }
+    
+    
     oppo(nextProps){
         console.log(nextProps);
         this.setState({
@@ -21,7 +23,11 @@ class Classify extends Component {
         })
     }
     componentDidMount(){
-        console.log(12345);
+        //console.log(12345);
+    }
+    itemClick(pop,sta){
+        console.log(pop);
+        this.props.history.push({pathname:'/list',state:{ 'sid': pop}});//传递的state格式要按内置模板
     }
     render(){return (
         <div className="classify">
@@ -50,7 +56,7 @@ class Classify extends Component {
                 {
                     this.state.xitem.map((item)=>{
                         return (
-                            <div className="classItem" key={item.CategoryId}>
+                            <div className="classItem" key={item.CategoryId} onClick={this.itemClick.bind(this,'sta')}>
                                 <img src={item.PictureUrl} alt=""/>
                                 <span>{item.CategoryName}</span>
                             </div>
