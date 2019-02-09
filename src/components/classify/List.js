@@ -3,6 +3,7 @@ import ListItem from '../home/ItemList.js';
 import { Menu } from 'antd';
 
 class List extends Component{
+    
     constructor(){
         super();
         this.state={data:'123',current: 'mail'}
