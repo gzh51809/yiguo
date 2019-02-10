@@ -34,7 +34,7 @@ class List extends Component{
                 </Menu.Item>
             </Menu>
             </div>
-            <ListItem>123</ListItem>
+            <ListItem>list</ListItem>
             </div>)
     }
 

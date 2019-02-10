@@ -1,10 +1,63 @@
 .navDian{
-    /* color: aquamarine; */
+    
 }
+/* 导航 */
 .sNav{
     height: 51px;
-    background: yellow;
+    background: white;
     position: fixed;
     bottom: 0px;
     width: 375px;
+    padding: 0 10px;
+    border-top: 1px solid #eee;
+}
+.sNav>div{
+    display: flex;
+}
+.sNav>div a{
+    flex: 1;
+    text-align: center;
+}
+.nav_item{
+    height: 51px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav_img{
+    display: block;
+    width: 32px;
+    height: 24px;
+    background: url(//img05.yiguoimg.com/e/web/170110/00583/164146/nav_user_active.png) 50% no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.nav_name{
+    display: block;
+}
+.nav_img0{
+    background: url(../../assets/nav_home.png) no-repeat;
+    background-size: 100% 100%;
+}
+.nav_img1{
+    background: url(../../assets/nav_class.png) no-repeat;
+    background-size: 100% 100%;
+}
+.nav_img2{
+    background: url(../../assets/nav_eat.png) no-repeat;
+    background-size: 100% 100%;
+}
+.nav_img3{
+    background: url(../../assets/nav_car.png) no-repeat;
+    background-size: 100% 100%;
+}
+.nav_img4{
+    background: url(../../assets/nav_user.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* asd */
+.navDian/home{
+    background: url(../../assets/nav_home2.png) no-repeat;
+    background-size: 100% 100%;
 }

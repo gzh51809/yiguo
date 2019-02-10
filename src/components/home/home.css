@@ -36,8 +36,8 @@
     /* background: yellow; */
     display: flex;
     align-items:center;
-    
-
+    width: 375px;
+    overflow: hidden;
 }
 .yCarousel>img{
     line-height: 33px;
