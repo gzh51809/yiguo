@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 import {sum} from './router.js';
-console.log(sum());
 
-function Navbar(props){
-    let navName=['首页','分类','资讯','购物车','个人主页'];
+class Navbar extends Component{
+    constructor(){
+      super();
+      this.state={navName:['首页','分类','资讯','购物车','个人主页'],img:['active','','','','']}
+  }
+
+  onclis(pop){
+    console.log(pop);
+    //console.log(this.state.img);
+    let result = this.state.img.map(x => '');
+    result[pop]='active';
+    this.setState({img:result})
+  }
     //console.log(props);
-    return (<div className="sNav" style={{display:props.xian.location.pathname==='/list'&&'./details'?'none':'block'}}>
+    render(){
+      return (<div className="sNav" style={{display:this.props.xian.location.pathname==='/list'&&'./details'?'none':'block'}}>
     <div>
     {
-      sum().map(function(item,index){
-        return (<NavLink to={item} key={index}>
-        <span className="nav_item" >
-          <span className={'nav_img nav_img'+index} onClick={nav2.bind(this)}></span>
-          <span className="nav_name">{navName[index]}</span>
+      sum().map((item,index)=>{
+        return (<NavLink to={item} key={index} >
+        <span className="nav_item" onClick={this.onclis.bind(this,index)}>
+          <span className={'nav_img nav_img'+index+' nav_img'+index+this.state.img[index]}></span>
+          <span className="nav_name">{this.state.navName[index]}</span>
         </span>
         </NavLink>)
       })
@@ -21,16 +32,6 @@ function Navbar(props){
     </div>
         
     </div>);
-    function nav2(name){
-      //console.log('navDian'+props.xian.location.pathname);
-      try{
-        console.log(name);
-      }catch{
-        console.log('报错');
-        
-      }
-      
-      //return 'navDian'+props.xian.location.pathname;
     }
 }
 

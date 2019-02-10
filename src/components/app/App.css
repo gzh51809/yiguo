@@ -57,7 +57,21 @@
     background-size: 100% 100%;
 }
 /* asd */
-.navDian/home{
+.nav_img0active{
     background: url(../../assets/nav_home2.png) no-repeat;
     background-size: 100% 100%;
 }
+.nav_img1active{
+    background: url(../../assets/nav_class2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav_img3active{
+    background: url(../../assets/nav_car2.png) no-repeat;
+    background-size: 100% 100%;
+}
+.nav_img4active{
+    background: url(../../assets/nav_user2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
