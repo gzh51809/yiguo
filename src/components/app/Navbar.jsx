@@ -24,6 +24,7 @@ class Navbar extends Component{
       return 'none';
     }else{
       return 'block';
+      
     }
   }
     //console.log(props);
