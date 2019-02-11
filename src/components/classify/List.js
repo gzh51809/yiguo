@@ -9,11 +9,16 @@ class List extends Component{
         this.state={data:'123',current: 'mail'}
     }
     handleClick = (e) => {
-        // console.log('click ', e);
+        //筛选事件
+        //console.log('click ', e);
         this.setState({
           current: e.key,
         });
       }
+    det=(tas,name)=>{
+        //console.log('kkk',tas,name);
+        this.props.history.push({pathname:'/details',state:{ 'data': name}});
+    }
 
     render(){
         return (<div>
@@ -34,7 +39,7 @@ class List extends Component{
                 </Menu.Item>
             </Menu>
             </div>
-            <ListItem>list</ListItem>
+            <ListItem det={this.det}>list</ListItem>
             </div>)
     }
 

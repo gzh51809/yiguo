@@ -1,0 +1,181 @@
+{
+  "Data": {
+    "UserInfo": {
+      "MobAppUploadHeadFileUrl": null,
+      "HasNoReadMsg": false,
+      "CheckInfo": {
+        "IsShowCheckIn": 1,
+        "IsCheckIn": false,
+        "CheckInText": "签到送好礼",
+        "CheckInUrl": "https://h5appweb.yiguo.com/SignIn/SignInActivity",
+        "IndentText": "已签到"
+      },
+      "HeadBigBgUrl": null,
+      "HeadSmallBgUrl": null,
+      "IconList": [
+        {
+          "IconId": null,
+          "IconName": "优惠券",
+          "IconUrl": "https://img07.yiguoimg.com/d/web/181029/00591/155051/coupons.png",
+          "LinkCode": null,
+          "LinkType": 19,
+          "LinkUrl": "https://h5mall.yiguo.com/home/coupon.html",
+          "ActiveIconUrl": "https://img07.yiguoimg.com/d/web/181029/00591/155051/coupons.png",
+          "Tip": null
+        },
+        {
+          "IconId": null,
+          "IconName": "充值卡",
+          "IconUrl": "https://img06.yiguoimg.com/d/web/181029/00591/155051/yellowcard.png",
+          "LinkCode": null,
+          "LinkType": 9,
+          "LinkUrl": null,
+          "ActiveIconUrl": "https://img02.yiguo.com/e/web/130101/app/icon/usercenter/yellowcard@3x.png",
+          "Tip": null
+        },
+        {
+          "IconId": null,
+          "IconName": "礼品兑换券",
+          "IconUrl": "https://img07.yiguoimg.com/d/web/181029/00591/155051/delivery.png",
+          "LinkCode": null,
+          "LinkType": 3,
+          "LinkUrl": "https://b2bvoucher.yiguo.com/",
+          "ActiveIconUrl": "https://img02.yiguo.com/e/web/130101/app/icon/usercenter/delivery@3x.png",
+          "Tip": null
+        },
+        {
+          "IconId": null,
+          "IconName": "收货地址",
+          "IconUrl": "https://img07.yiguoimg.com/d/web/181029/00591/155051/address.png",
+          "LinkCode": null,
+          "LinkType": 8,
+          "LinkUrl": null,
+          "ActiveIconUrl": "https://img02.yiguo.com/e/web/130101/app/icon/usercenter/address@3x.png",
+          "Tip": null
+        },
+        {
+          "IconId": null,
+          "IconName": "帮助中心",
+          "IconUrl": "https://img06.yiguoimg.com/d/web/181029/00591/155051/help.png",
+          "LinkCode": null,
+          "LinkType": 10,
+          "LinkUrl": null,
+          "ActiveIconUrl": "https://img02.yiguo.com/e/web/130101/app/icon/usercenter/help@3x.png",
+          "Tip": null
+        },
+        {
+          "IconId": null,
+          "IconName": "我的团购",
+          "IconUrl": "https://img02.yiguo.com/e/web/130101/app/icon/usercenter/box@3x.png",
+          "LinkCode": null,
+          "LinkType": 7,
+          "LinkUrl": "https://groupon.yiguo.com/home/orderList.html?appName=3000025",
+          "ActiveIconUrl": "https://img02.yiguo.com/e/web/130101/app/icon/usercenter/box@3x.png",
+          "Tip": null
+        },
+        {
+          "IconId": null,
+          "IconName": "账户余额",
+          "IconUrl": "https://img06.yiguoimg.com/d/web/181121/00591/143839/account-icon.png",
+          "LinkCode": null,
+          "LinkType": 12,
+          "LinkUrl": "https://h5common.yiguo.com/systemUpdate.html",
+          "ActiveIconUrl": "https://img06.yiguoimg.com/d/web/181121/00591/143839/account-icon.png",
+          "Tip": "0"
+        },
+        {
+          "IconId": null,
+          "IconName": "在线客服",
+          "IconUrl": "https://img07.yiguoimg.com/d/web/181029/00591/155051/service.png",
+          "LinkCode": null,
+          "LinkType": 11,
+          "LinkUrl": null,
+          "ActiveIconUrl": "https://img02.yiguo.com/e/web/130101/app/icon/usercenter/service@3x.png",
+          "Tip": null
+        }
+      ],
+      "RechargeUrl": "&Balance=0.00",
+      "MyCardBagUrl": "https://h5common.yiguo.com/meCardBag.html",
+      "Banner": null,
+      "VoucherUrl": null,
+      "CardRechargeDescUrl": null,
+      "UBListUrl": "https://h5appweb.yiguo.com/Ubills",
+      "OrderTips": {
+        "CommentCount": 0,
+        "NoPayCount": 0,
+        "ReceivingCount": 0
+      },
+      "BalanceAndCoupons": [
+        {
+          "Number": "0.00",
+          "Text": "卡包余额",
+          "LinkType": 2
+        },
+        {
+          "Number": "0",
+          "Text": "悠币",
+          "LinkType": 3
+        }
+      ],
+      "OrderIcons": [
+        {
+          "IconUrl": "https://img07.yiguoimg.com/d/web/180608/01261/105825/unpaid.png",
+          "IconText": "待支付",
+          "LinkType": 2
+        },
+        {
+          "IconUrl": "https://img07.yiguoimg.com/d/web/180608/01261/105825/take.png",
+          "IconText": "待收货",
+          "LinkType": 3
+        },
+        {
+          "IconUrl": "http://img05.yiguoimg.com/d/web/180608/01261/105825/evaluate.png",
+          "IconText": "评价送悠币",
+          "LinkType": 4
+        },
+        {
+          "IconUrl": "https://img06.yiguoimg.com/d/web/180608/01261/105825/changing.png",
+          "IconText": "在线退换货",
+          "LinkType": 5
+        }
+      ],
+      "Token": null,
+      "LoginToken": null,
+      "UserId": null,
+      "UserName": null,
+      "Mobile": null,
+      "Email": null,
+      "UserLevel": "0",
+      "UserLevelText": "普通用户",
+      "useLevelInfo": {
+        "IsShowUserLeve": 1,
+        "UserLevel": "0",
+        "UserLevelText": "普通用户"
+      },
+      "userGradeInfo": {
+        "IsShowNewGradeRuleTip": 1,
+        "AmountCost": null,
+        "AmountCostShowText": null,
+        "NextGradeTip": null,
+        "GradeRulesShowText": null,
+        "UserHistoryOrderDetailUrl": null
+      },
+      "IsActivate": "False",
+      "Balance": "0",
+      "GiftCardBalance": "0.00",
+      "UBAmount": "0",
+      "CouponCount": 0,
+      "ActivateUrl": null,
+      "DisplayName": null,
+      "UserPhoto": null,
+      "PhotoTips": null,
+      "UserLinkUrl": null,
+      "NickName": null,
+      "Birthday": "0001/1/1 0:00:00",
+      "Sex": 0
+    }
+  },
+  "Code": "0",
+  "Message": "操作成功",
+  "IsSuccessful": true
+}

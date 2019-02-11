@@ -7,17 +7,28 @@ class Navbar extends Component{
       super();
       this.state={navName:['首页','分类','资讯','购物车','个人主页'],img:['active','','','','']}
   }
-
+  componentDidMount(){
+    this.onclis(sum().indexOf(this.props.xian.location.pathname))
+  }
   onclis(pop){
-    console.log(pop);
+    //console.log(pop);
     //console.log(this.state.img);
     let result = this.state.img.map(x => '');
     result[pop]='active';
     this.setState({img:result})
   }
+  styleBlock=()=>{
+    if(this.props.xian.location.pathname==='/list'){
+      return 'none';
+    }else if(this.props.xian.location.pathname==='/details'){
+      return 'none';
+    }else{
+      return 'block';
+    }
+  }
     //console.log(props);
     render(){
-      return (<div className="sNav" style={{display:this.props.xian.location.pathname==='/list'&&'./details'?'none':'block'}}>
+      return (<div className="sNav" style={{display:this.styleBlock()}}>
     <div>
     {
       sum().map((item,index)=>{

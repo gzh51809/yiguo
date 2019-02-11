@@ -1,8 +1,9 @@
 import React from 'react';
 import './list.css';
 import listdata from './listData1.json';
-//console.log(listdata);
 
+//console.log(listdata);
+//复用型列表组件
 // let items=[{
 //     url:require('../../assets/apply.jpg'),
 //     name:'新疆阿克苏冰糖心苹果原箱xxxxx',
@@ -16,7 +17,7 @@ function list(props){
     return (
     <div className="mlits">
         {
-            items2.map((item,idx)=><div className="mitem" key={idx}>
+            items2.map((item,idx)=><div className="mitem" key={idx}  onClick={()=>{props.det(this,item)}}>
             <div className="itemUrl">
                 <img src={item.SmallPic} alt=""/>
             </div>
