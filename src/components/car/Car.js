@@ -20,6 +20,7 @@ class Car extends Component {
             //console.log(this.state);
             this.setState({quansss:this.quanx()},()=>{
                 //console.log(this.state);
+                
             });
         });
     }
