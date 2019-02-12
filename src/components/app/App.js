@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './App.css';
+import './App.scss';
 
 import Navbar from './Navbar.jsx';
 import {SaSwitch} from './router.js';

@@ -1,3 +1,136 @@
+.cark{
+    background: #f4f4f4;
+}
 .carls{
-    color: red;
+    color: #999;
+    display: block;
+    height: 40px;
+    width: 375px;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+}
+.car_g{
+    height: 40px;
+    width: 375px;
+    color: #d3b162;
+    background: #fff9eb;
+    text-align: center;
+    line-height: 40px;
+}
+.car_item{
+    display:flex;
+    background: white;
+    margin-bottom: 20px;
+    //justify-content:content;
+    align-items: center;
+    padding: 15px 10px;
+    >span{
+        display: block;
+        height: 18px;
+        width: 36px;
+        .check{
+            margin:0 auto;
+            display: block;
+            width: 18px;
+            height: 18px;
+            background: url(../../assets/check2.png) no-repeat;
+            background-size: 100%;
+        }
+        .check1{
+            margin:0 auto;
+            display: block;
+            width: 18px;
+            height: 18px;
+            background: url(../../assets/check1.png) no-repeat;
+            background-size: 100%;
+        }
+
+    }
+    .car_img{
+        width: 81px;
+        height: 81px;
+        background: #d3b162;
+        img{
+            width: 81px;
+            height: 81px;
+        }
+    }
+    >div:nth-child(3){
+        height: 81px;
+        width: 240px;
+        padding: 0 10px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            .del{
+                display: block;
+                width: 15px;
+                height: 17px;
+                background: url('../../assets/del.png') no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+}
+.guess{
+    height: 50px;
+    width: 375px;
+    //background: #999;
+    position: fixed;
+    bottom: 51px;
+    font-size: 12px;
+    border-top: 1px solid #999;
+    .quanx{
+
+        .check{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: url(../../assets/check2.png) no-repeat;
+            background-size: 100%;
+        }
+        .check1{
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: url(../../assets/check1.png) no-repeat;
+            background-size: 100%;
+        }
+    }
+    >div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        >div{
+            display: flex;
+            align-items: center;
+            height: 50px;
+            >div{
+                display: flex;
+                flex-direction: column;
+                padding: 0 10px;
+                .car_he{
+                    >span{
+                        font-size: 14px;
+                        color: #fb3d3d;
+                    }
+                }
+            }
+            p{
+                font-size: 16px;
+                width: 120px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                margin: 0;
+                background: #fb3d3d;
+                color: #fff;
+            }
+        }
+    }
 }

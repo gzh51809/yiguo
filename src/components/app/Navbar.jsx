@@ -33,7 +33,7 @@ class Navbar extends Component{
     <div>
     {
       sum().map((item,index)=>{
-        return (<NavLink to={item} key={index} >
+        return (<NavLink to={item} key={index} activeClassName="nav_item_ativ">
         <span className="nav_item" onClick={this.onclis.bind(this,index)}>
           <span className={'nav_img nav_img'+index+' nav_img'+index+this.state.img[index]}></span>
           <span className="nav_name">{this.state.navName[index]}</span>

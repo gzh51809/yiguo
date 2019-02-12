@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import './details.scss'
-import { InputNumber,Rate  } from 'antd';
+import { InputNumber,Rate,Carousel  } from 'antd';
 class Details extends Component{
     constructor(){
         super();
-        this.state={data:'详情页',img:require('../../assets/squirrel.jpg')}
+        this.state={data:'详情页',img:require('../../assets/squirrel.jpg'),img2:require('../../assets/yt.jpg'),itemData:{CommodityName:'',OriginalPrice:'',SmallPic:'',Spec:'',SubTitle:''}}
     }
     componentDidMount(){
         console.log(777);
         try {
-            //console.log(this.props.location.state.data);
+            this.setState({itemData:this.props.location.state.data},()=>{
+                //console.log(this.state);
+            });
+            this.setState({img2:this.props.location.state.data.SmallPic},()=>{
+                //console.log(this.state);
+            })
         } catch (error) {
             //console.log('未传参');
         }
@@ -35,18 +40,24 @@ class Details extends Component{
                 </div>
                 <span>立即打开</span>
             </div>
-            <div className="details_banner"></div>
+            <div className="MyCarousel details_banner">
+            <Carousel autoplay>
+                <div><img src={this.state.img2} alt=""/></div>
+                <div><img src={this.state.img2} alt=""/></div>
+                <div><img src={this.state.img2} alt=""/></div>
+            </Carousel>
+            </div>
             <div className="productInfor">
-                <p>澳奎内蒙羔羊肉卷250g</p>
-                <p>没有羊肉卷的火锅是假的</p>
-                <div><span>￥25</span>
+                <p>{this.state.itemData.CommodityName}</p>
+                <p>{this.state.itemData.SubTitle}</p>
+                <div><span>￥{this.state.itemData.OriginalPrice}</span>
                 <span>产地：内蒙古</span>
                 </div>
                 <p>不支持7天无理由退货</p>
             </div>
             <div className="norms">
                 <div>
-                    规格<span>250g/盒</span>
+                    规格<span>{this.state.itemData.Spec}</span>
                 </div>
                 <div>
                     <span>数量</span><InputNumber min={1} max={100000} defaultValue={3} onChange={this.onChange} />
@@ -82,7 +93,15 @@ class Details extends Component{
             <div className="ev_duo">
                 <span>查看图文详情</span>
             </div>
-            <div className="footer"></div>
+            <div className="footer1">
+                <div>
+                    <div>
+                        <span><i></i>首页</span>
+                        <span><i></i>购物车</span>
+                    </div>
+                    <div>加入购物车</div>
+                </div>
+            </div>
         </div>);
     }
 }

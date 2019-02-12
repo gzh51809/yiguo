@@ -10,6 +10,20 @@
     width: 375px;
     padding: 0 10px;
     border-top: 1px solid #eee;
+    .nav_item{
+        span{
+            color:#000;
+            font-size: 12px;
+        }
+        
+        
+    }
+    .nav_item_ativ{
+        span{
+            color: #11b57c;
+        }
+    }
+    
 }
 .sNav>div{
     display: flex;
