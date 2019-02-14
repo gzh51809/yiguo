@@ -8,7 +8,17 @@ class Navbar extends Component{
       this.state={navName:['首页','分类','资讯','购物车','个人主页'],img:['active','','','','']}
   }
   componentDidMount(){
-    this.onclis(sum().indexOf(this.props.xian.location.pathname))
+    this.onclis(sum().indexOf(this.props.xian.location.pathname));
+    setTimeout(() => {
+        console.log("home",this.props);
+        this.props.xian.dispatch({
+          type:'QQ',
+          payload:{fid :'909',name:'ffff'}
+        });
+    }, 1000);
+    setTimeout(() => {
+        console.log("home2",this.props);
+    }, 2000);
   }
   onclis(pop){
     //console.log(pop);

@@ -1,6 +1,6 @@
 import React from 'react';
 import './list.css';
-import listdata from './listData1.json';
+//import listdata from './listData1.json';
 
 //console.log(listdata);
 //复用型列表组件
@@ -11,9 +11,12 @@ import listdata from './listData1.json';
 //     saletip:'直降40元',
 //     price:99
 // }];
-let items2=listdata.CommodityList;
+
 
 function list(props){
+    //console.log(props);
+    let items2=props.sum;
+    //console.log(items2);
     return (
     <div className="mlits">
         {

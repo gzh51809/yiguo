@@ -5,6 +5,16 @@ import './home.css';
 import Hscroll from './Hscroll.jsx';
 import ItemList from './ItemList.js';
 import { Carousel,Spin  } from 'antd';
+import axios from 'axios';
+
+import {connect} from 'react-redux'
+
+import listdata from './listData1.json';
+
+
+//let items3=listdata.CommodityList.concat();
+
+
 
 class Home extends Component {
     constructor(){
@@ -16,7 +26,7 @@ class Home extends Component {
         news:require('../../assets/news.png'),
         chun:require('../../assets/chun.png'),
         chunData:[1,2,3,4,5,6,7,8],
-        
+        items2:listdata.CommodityList,
     };
       }
     handleScroll(event){
@@ -25,8 +35,29 @@ class Home extends Component {
     }
     componentDidMount(){
         // console.log(this.refs)
+        
+        
+        
+        axios.get('http://127.0.0.1:3001/789')
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
         window.addEventListener('scroll',()=>{
-            console.log(this.refs.bot.of);
+            //console.log(this.refs.bot.offsetTop);
+            let sc=window.scrollY;
+            let wh=window.innerHeight
+            let mok = this.refs.mok.offsetHeight;
+            if((sc+wh)>mok){
+                console.log('到底了');
+                // this.setState({ 
+                //     items3:this.state.items2
+                // });
+                //this.state.chunData
+            }
+            //console.log(,window.innerHeight,this.refs.mok.offsetHeight);
         });
     }
     render(){return (
@@ -66,13 +97,14 @@ class Home extends Component {
             
             <Hscroll class="sing" img={this.state.img1} img2={this.state.img2}></Hscroll>
             <div className="rq"></div>
-            <ItemList sum={this.state.chunData}/>
+            <ItemList sum={this.state.items2}/>
             <div className="bot" ref="bot" style={{height:"100px"}}><Spin /></div>  
         </div>
     )};
 }
 
 export default Home;
+
 
 function rimg(url){
     return require('../../assets/c'+url+'.jpg');
