@@ -8,7 +8,7 @@ let data=[{
     pice:33}];
 
 class Car extends Component {
-    constructor(){
+    constructor(){ 
         super();
         this.state={img:require('../../assets/yt.jpg'),itemData:data,quansss:false}
     }

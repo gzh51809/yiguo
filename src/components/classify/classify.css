@@ -43,7 +43,8 @@
 }
 .classRight{
     flex: 1;
-    
+    height: 575px;
+    overflow: scroll;
 }
 .classItem{
     float: left;

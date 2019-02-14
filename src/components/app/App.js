@@ -5,6 +5,10 @@ import './App.scss';
 import Navbar from './Navbar.jsx';
 import {SaSwitch} from './router.js';
 import {withRouter} from 'react-router-dom';
+
+import store from '../strore';
+console.log(store);
+
 class App extends Component {
   constructor(){
     super();

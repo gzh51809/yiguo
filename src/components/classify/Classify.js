@@ -29,6 +29,10 @@ class Classify extends Component {
         console.log(pop);
         this.props.history.push({pathname:'/list',state:{ 'sid': pop}});//传递的state格式要按内置模板
     }
+    handleScroll(sts){
+        console.log(window.scrollY,window.scrollX,sts.target.scrollTop);
+
+    }
     render(){return (
         <div className="classify">
             <div className="classTop">
@@ -52,7 +56,7 @@ class Classify extends Component {
                         }
                     </Menu>
                 </div>
-                <div className="classRight">
+                <div className="classRight" onScroll={this.handleScroll.bind(this)}>
                 {
                     this.state.xitem.map((item)=>{
                         return (

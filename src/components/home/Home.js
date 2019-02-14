@@ -15,11 +15,22 @@ class Home extends Component {
         rimg,
         news:require('../../assets/news.png'),
         chun:require('../../assets/chun.png'),
-        chunData:[1,2,3,4,5,6,7,8]
+        chunData:[1,2,3,4,5,6,7,8],
+        
     };
       }
+    handleScroll(event){
+        //滚动事件
+        //console.log('123',event.target);
+    }
+    componentDidMount(){
+        // console.log(this.refs)
+        window.addEventListener('scroll',()=>{
+            console.log(this.refs.bot.of);
+        });
+    }
     render(){return (
-        <div>
+        <div ref="mok" className="mok" onScroll={this.handleScroll.bind(this)}>
             <Abc />
             <div className="MyCarousel">
                 <Carousel autoplay>
@@ -56,7 +67,7 @@ class Home extends Component {
             <Hscroll class="sing" img={this.state.img1} img2={this.state.img2}></Hscroll>
             <div className="rq"></div>
             <ItemList sum={this.state.chunData}/>
-            <div className="bot" style={{height:"100px"}}><Spin /></div>  
+            <div className="bot" ref="bot" style={{height:"100px"}}><Spin /></div>  
         </div>
     )};
 }
