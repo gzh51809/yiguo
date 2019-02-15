@@ -1,8 +1,13 @@
 #易果生鲜-yiguo
+
 #WebApp项目
+
 ##使用React + Nodejs + MongoDB的为核心技术栈，部署于Windows 2012 R2 Server IIS服务器
+
 #UI框架及布局：AntUI + Flexible
+
 #项目地址：[易果生鲜](http://47.106.243.64:3007/#/home "浏览器查看")
+
 ### 目录
 ```
 \根目录
